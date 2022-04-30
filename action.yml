@@ -1,0 +1,12 @@
+name: <Name of Custom GitHub Action>
+description: <Short description of Action>
+inputs:
+  input_parameter:
+    description: <Short description of input parameter>
+    required: <true|false>
+    default: <default value>
+runs:
+  using: docker
+  image: Dockerfile
+  env:
+    INPUT_PARAMETER: {{ inputs.input_parameter }}
